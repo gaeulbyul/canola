@@ -1,0 +1,21 @@
+<div class="post-list">
+  {% for content in contents %}
+  <div class="item">
+    <div class="title">
+      <a href="{{config.baseurl}}posts/{{content.name}}/">
+        {% if content.metadata.Title %}
+        {{content.metadata.Title}} &mdash;
+        {% endif %}
+        <time class="pubdate" datetime="{{content.metadata2.Pubdate-notime}}">
+          {{content.metadata2.Pubdate-notime}}
+        </time>
+      </a>
+    </div>
+    {% if content.metadata2.Summary %}
+    <div class="fp post">
+      {{content.metadata2.Summary|safe}}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>

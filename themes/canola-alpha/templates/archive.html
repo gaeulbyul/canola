@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+{% block title %}Archive &ndash; {{config.sitename}}{% endblock %}
+{% block body %}
+archives:
+<ul>
+  {% for yearmonth in yearmonths %}
+  <li>
+    <a href="{{config.baseurl}}archives/{{yearmonth}}/">{{yearmonth}}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

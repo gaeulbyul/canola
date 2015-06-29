@@ -1,0 +1,17 @@
+{% extends "_base.html" %}
+{% block title %}{{metadata.Title}} &ndash; {{config.sitename}}{% endblock %}
+{% block body %}
+<main>
+<header class="article-header">
+  <div class="title">
+    <span class="text">{{metadata.Title}}</span>
+  </div>
+  <div class="pubdate">
+    <a class="permalink" href=".">{{metadata2.Pubdate}}</a>
+  </div>
+</header>
+<article class="post">
+  {{content|safe}}
+</article>
+</main>
+{% endblock %}

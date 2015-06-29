@@ -1,0 +1,3 @@
+baseurl: / # with trailing slash. e.g. /blog/
+sitename: Canola
+theme: canola-alpha
