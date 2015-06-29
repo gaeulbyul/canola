@@ -1,0 +1,143 @@
+/* common */
+
+/* Subtle Grey (grey.png) downloaded from Subtle Patterns.
+ * http://subtlepatterns.com/subtle-grey
+ * CC BY-SA 3.0
+*/
+body {
+	margin: 0;
+  background-image: url("grey.png");
+	font-family:
+    "Noto Sans CJK KR DemiLight", "Noto Sans CJK KR",
+    "Noto Sans Korean",
+    "Apple SD Gothic Neo",
+    "나눔고딕", "NanumGothic",
+    "맑은 고딕", "Malgun Gothic",
+    sans-serif;
+	font-weight: normal;
+	font-size: 14pt;
+}
+a {
+	color: #690;
+	text-decoration: underline;
+}
+a img {
+	border: 0;
+}
+a:hover {
+	color: #9c6;
+}
+a.no-ul {
+	text-decoration: none;
+}
+hr {
+	border-top: 2px solid #ccc;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+
+/* layout */
+.whole {
+	margin: 10px auto auto;
+	padding: 15px;
+	max-width: 600px;
+}
+
+/* header */
+header.top-header {
+	margin: 20px auto;
+	padding: 30px 20px;
+	text-align: center;
+	border-bottom: 2px dashed #ccc;
+}
+header.top-header .blog-title {
+	font-size: 20pt;
+}
+header.top-header .blog-title a {
+	color: #131;
+}
+header.top-header nav.blog-nav {
+	padding: 10px auto;
+}
+header.top-header nav.blog-nav a {
+	font-size: 12pt;
+}
+
+/* list of posts */
+div.item {
+	padding: 10px;
+  font-size: 14pt;
+}
+div.item:not(:first-child) {
+	border-top: 1px solid #ccc;
+}
+div.item time.pubdate {
+  font-size: 10pt;
+}
+
+/* article */
+header.article-header {
+	text-align: left;
+}
+header.article-header .title .text {
+	font-size: 28pt;
+	font-weight: bold;
+}
+header.article-header .title .permalink {
+	font-size: 20pt;
+}
+
+article {
+  font-size: 14pt;
+}
+article hr {
+	margin: auto;
+}
+article strong,
+article b {
+	color: #000;
+	background-color: #cf9;
+}
+article em,
+article i {
+	font-style: normal;
+	font-weight: bold;
+	color: #000;
+}
+article pre {
+	padding: 10px;
+	border: 1px solid #999;
+	border-radius: 5px;
+	background-color: rgba(0,0,0, .1);
+}
+article li > code,
+article p > code {
+	padding: 0 2px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background-color: rgba(0,0,0, .1);
+}
+article code {
+	font-family: "Consolas", "Menlo", "Monaco", sans-serif;
+}
+article ul > li {
+	list-style: square;
+}
+.post {
+	line-height: 160%;
+	color: #333;
+}
+
+/* footer */
+footer {
+	margin: 30px auto;
+	padding: 15px;
+	font-size: 10pt;
+	border-radius: 3px;
+	background-color: rgba(0,0,0, .5);
+	color: white;
+}
+footer a {
+	color: #cf9;
+}
